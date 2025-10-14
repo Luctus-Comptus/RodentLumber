@@ -244,13 +244,12 @@
 
 	target.faction = list("[user.mind.current.real_name]_faction") //only user faction
 	target.visible_message(span_notice("[target] turns its head to pay heed to [user]!"))
-	if(!target.ai_controller)
-		target.ai_controller = /datum/ai_controller/undead
-		target.InitializeAIController()
-		if(issimple(target))
-			var/mob/living/simple_animal/simple_target = target
-			simple_target.tamed()
-
+	if(issimple(target))
+		var/mob/living/simple_animal/simple_target = target
+		simple_target.tamed()
+		if(!target.ai_controller)
+			target.ai_controller = /datum/ai_controller/undead
+			target.InitializeAIController()
 	return TRUE
 
 
