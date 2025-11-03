@@ -9,10 +9,10 @@
 
 	subclass_stats = list(
 		STATKEY_INT = 3,
-		STATKEY_LCK = 1,
+		STATKEY_LCK = 2,
 		STATKEY_STR = 1,
 		STATKEY_CON = 1,
-		STATKEY_PER = 1,
+		STATKEY_PER = 2,
 		STATKEY_WIL = 2 //a lot of stats but no any traits, literally
 	)
 
