@@ -138,6 +138,9 @@
 	desc = "Offers superior coverage to a simple gorget, though it sacrifices some protection in return."
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
+	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	flags_inv = HIDEHAIR
 	armor = ARMOR_MAILLE
 	max_integrity = ARMOR_INT_SIDE_STEEL
@@ -241,7 +244,8 @@
 	armor = ARMOR_PLATE
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
-
+	equip_sound = 'sound/foley/equip/equip_armor.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	max_integrity = ARMOR_INT_SIDE_STEEL
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
@@ -270,6 +274,8 @@
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/iron
 	anvilrepair = /datum/skill/craft/armorsmithing
+	equip_sound = 'sound/foley/equip/equip_armor.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	max_integrity = ARMOR_INT_SIDE_IRON
 	resistance_flags = FIRE_PROOF
 	body_parts_inherent = NECK
