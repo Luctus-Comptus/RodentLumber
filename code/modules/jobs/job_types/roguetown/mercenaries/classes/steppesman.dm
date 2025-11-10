@@ -127,69 +127,69 @@
 				if(maskchoice != "None")
 					mask = masks[maskchoice]
 
-		if("Gromoverzhets - Pálya Sapper")	//Tl;dr - these guys fucking EXPLODE. No whip. No dagger. Less skills. Three TNT sticks. Impact of choice. Godspeed.
-			H.set_blindness(0)
-			to_chat(H, span_warning("The Gromoverzhets are a smaller branch of the Obyvatel' \
-			solely responsible for the handling, and frequent use- of the Company's explosives. \
-			Let common sense be your guide, and your throwing arm; strong. Ne ubivay sebya, pozhaluysta."))
-			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-			head = /obj/item/clothing/head/roguetown/papakha
-			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-			if(should_wear_femme_clothes(H))
-				armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
-			else
-				armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/steppe
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			backl = /obj/item/rogueweapon/shield/iron/steppesman
-			beltl = /obj/item/tntstick
-			beltr = /obj/item/tntstick
-			l_hand = /obj/item/rogueweapon/stoneaxe/battle/steppesman
-			neck = /obj/item/clothing/neck/roguetown/chaincoif
-			//No whip, dagger, etc. Only the explosives and some basic stuff.
-			backpack_contents = list(
-				/obj/item/roguekey/mercenary,
-				/obj/item/storage/belt/rogue/pouch/coins/poor,
-				/obj/item/tntstick
-				)
-			H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)//One less axe skill.
-			H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)//One less shield skill.
-			H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-			H.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 2, TRUE)		//To avoid virtue cheese
-			H.adjust_skillrank_up_to(/datum/skill/craft/crafting, 2, TRUE)		//Ditto
-			H.adjust_skillrank_up_to(/datum/skill/labor/mining, 3, TRUE)		//Ditto
-			H.adjust_skillrank_up_to(/datum/skill/craft/traps, 3, TRUE)			//Ditto
-			H.change_stat(STATKEY_WIL, 3)		//Two less speed, no con, compared to 'elite' sappers. 7 spread.
-			H.change_stat(STATKEY_STR, 2)
-			H.change_stat(STATKEY_PER, 2)
-			H.change_stat(STATKEY_SPD, -4)
-			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)//No armour skill. They get BOMBS.
-			H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
-			var/masks = list(
-			"Humen" 	= /obj/item/clothing/mask/rogue/facemask/steel/steppesman,
-			"Beast"		= /obj/item/clothing/mask/rogue/facemask/steel/steppesman/anthro,
-			"None"
-	)
-			var/maskchoice = input("What fits your face?", "MASK SELECTION") as anything in masks
-			if(maskchoice != "None")
-				mask = masks[maskchoice]
+			if("Gromoverzhets - Pálya Sapper")	//Tl;dr - these guys fucking EXPLODE. No whip. No dagger. Less skills. Three TNT sticks. Impact of choice. Godspeed.
+				H.set_blindness(0)
+				to_chat(H, span_warning("The Gromoverzhets are a smaller branch of the Obyvatel' \
+				solely responsible for the handling, and frequent use- of the Company's explosives. \
+				Let common sense be your guide, and your throwing arm; strong. Ne ubivay sebya, pozhaluysta."))
+				shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+				head = /obj/item/clothing/head/roguetown/papakha
+				gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+				if(should_wear_femme_clothes(H))
+					armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
+				else
+					armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/steppe
+				wrists = /obj/item/clothing/wrists/roguetown/bracers
+				backl = /obj/item/rogueweapon/shield/iron/steppesman
+				beltl = /obj/item/tntstick
+				beltr = /obj/item/tntstick
+				l_hand = /obj/item/rogueweapon/stoneaxe/battle/steppesman
+				neck = /obj/item/clothing/neck/roguetown/chaincoif
+				//No whip, dagger, etc. Only the explosives and some basic stuff.
+				backpack_contents = list(
+					/obj/item/roguekey/mercenary,
+					/obj/item/storage/belt/rogue/pouch/coins/poor,
+					/obj/item/tntstick
+					)
+				H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)//One less axe skill.
+				H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)//One less shield skill.
+				H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+				H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+				H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+				H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 2, TRUE)		//To avoid virtue cheese
+				H.adjust_skillrank_up_to(/datum/skill/craft/crafting, 2, TRUE)		//Ditto
+				H.adjust_skillrank_up_to(/datum/skill/labor/mining, 3, TRUE)		//Ditto
+				H.adjust_skillrank_up_to(/datum/skill/craft/traps, 3, TRUE)			//Ditto
+				H.change_stat(STATKEY_WIL, 3)		//Two less speed, no con, compared to 'elite' sappers. 7 spread.
+				H.change_stat(STATKEY_STR, 2)
+				H.change_stat(STATKEY_PER, 2)
+				H.change_stat(STATKEY_SPD, -4)
+				ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)//No armour skill. They get BOMBS.
+				H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
+				var/masks = list(
+				"Humen" 	= /obj/item/clothing/mask/rogue/facemask/steel/steppesman,
+				"Beast"		= /obj/item/clothing/mask/rogue/facemask/steel/steppesman/anthro,
+				"None"
+		)
+				var/maskchoice = input("What fits your face?", "MASK SELECTION") as anything in masks
+				if(maskchoice != "None")
+					mask = masks[maskchoice]
 
-			var/special_grenade = list(
-			"EXPLOSIVE"			= /obj/item/impact_grenade/explosion,
-			"DUST"				= /obj/item/impact_grenade/smoke,
-			"POISON"			= /obj/item/impact_grenade/smoke/poison_gas,
-			"CONFLAGRATION"		= /obj/item/impact_grenade/smoke/fire_gas,
-			"BLINDING"			= /obj/item/impact_grenade/smoke/blind_gas,
-			"None"
-	)
-			var/grenade_choice = input("What impact grenade do you carry?", "IMPACT SELECTION") as anything in special_grenade
-			if(grenade_choice != "None")
-				r_hand = special_grenade[grenade_choice]
-			else//Do they not take a grenade? Engineering skill and alchemy. They're a bomb factory.
-				H.adjust_skillrank_up_to(/datum/skill/craft/engineering, 2, TRUE)	//Eeyup.
-				H.adjust_skillrank_up_to(/datum/skill/craft/alchemy, 2, TRUE)	//This ain't a pie factory.
+				var/special_grenade = list(
+				"EXPLOSIVE"			= /obj/item/impact_grenade/explosion,
+				"DUST"				= /obj/item/impact_grenade/smoke,
+				"POISON"			= /obj/item/impact_grenade/smoke/poison_gas,
+				"CONFLAGRATION"		= /obj/item/impact_grenade/smoke/fire_gas,
+				"BLINDING"			= /obj/item/impact_grenade/smoke/blind_gas,
+				"None"
+		)
+				var/grenade_choice = input("What impact grenade do you carry?", "IMPACT SELECTION") as anything in special_grenade
+				if(grenade_choice != "None")
+					r_hand = special_grenade[grenade_choice]
+				else//Do they not take a grenade? Engineering skill and alchemy. They're a bomb factory.
+					H.adjust_skillrank_up_to(/datum/skill/craft/engineering, 2, TRUE)	//Eeyup.
+					H.adjust_skillrank_up_to(/datum/skill/craft/alchemy, 2, TRUE)	//This ain't a pie factory.
 
 
 			if("Zastrel'shchik - Light Archer")	//Tl;dr - light armor class for Tatar-style archery.

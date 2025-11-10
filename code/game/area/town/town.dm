@@ -44,7 +44,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
-	first_time_text = "THE KEEP OF ROTWOOD VALE
+	first_time_text = "THE KEEP OF ROTWOOD VALE"
 	keep_area = TRUE
 	detail_text = DETAIL_TEXT_MANOR
 

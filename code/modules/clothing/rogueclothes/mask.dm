@@ -356,7 +356,7 @@
 
 /obj/item/clothing/mask/rogue/facemask/hound
 	name = "hound mask"
-	icon_state = "imask_hound"
+	icon_state = "imask_snout"
 	max_integrity = 100
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
@@ -451,7 +451,7 @@
 /obj/item/clothing/mask/rogue/facemask/steel/hound
 	name = "steel hound mask"
 	desc = "A steel mask, made for those who have snouts, protecting the eyes, nose and muzzle while obscuring the face."
-	icon_state = "smask_hound"
+	icon_state = "smask_snout"
 
 /obj/item/clothing/mask/rogue/facemask/steel/steppesman
 	name = "steppesman war mask"
