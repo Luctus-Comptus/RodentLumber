@@ -86,7 +86,7 @@
 	if(!testes)
 		return
 	var/obj/item/organ/vagina/vag = wife.getorganslot(ORGAN_SLOT_VAGINA)
-	if(!vag || !HAS_TRAIT(wife, TRAIT_BAOTHATEST))
+	if(!vag && !HAS_TRAIT(wife, TRAIT_BAOTHA_SHAPED))
 		return
 	var/prob_for_impreg = vag.impregnation_probability
 	if(wife.sexcon.knotted_status) // if they're knotted, increased by two factor for dramatic impact
@@ -101,7 +101,7 @@
 				to_chat(wife, span_love("I feel a surge of warmth inside me again..."))
 				return
 			to_chat(wife, span_love("I feel a strange surge of warmth inside me... Am I pregnant?!"))
-    		wife.mpreg = TRUE
+			wife.mpreg = TRUE
 	else
 		if(vag)
 			vag.impregnation_probability = min(prob_for_impreg + IMPREG_PROB_INCREMENT, IMPREG_PROB_MAX)

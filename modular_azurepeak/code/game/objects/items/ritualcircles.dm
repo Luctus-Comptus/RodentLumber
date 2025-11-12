@@ -1859,7 +1859,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	name = "Rune of Hedonism"
 	desc = "A Holy Rune of Baotha. Relief for the broken hearted."
 	icon_state = "baotha_chalky"
-	var/baotharites = list("Conversion", "test name")
+	var/baotharites = list("Conversion", "Embodiment of male fertility")
 
 /obj/structure/ritualcircle/psydon // done as a joke, but it is good for Psydonites to decorate with.
 	name = "Rune of Enduring"
@@ -1904,7 +1904,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 							baothaconversion(target) // removed CD bc it's gonna be coal to sit there and wait for it to go off rite cooldown, this one is purely social in its nature
 							spawn(120)
 								icon_state = "baotha_chalky"
-		if("test name")
+		if("Embodiment of male fertility")
 			var/list/valids_on_rune = list()
 			for(var/mob/living/carbon/human/peep in range(0, loc))
 				if(HAS_TRAIT(peep, TRAIT_DEPRAVED))
@@ -1920,11 +1920,11 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 				to_chat(user, "Those who can naturally bear a child cannot receive this blessing!")
 				return
 			if(do_after(user, 50))
-				user.say("one")
+				user.say("Purple flame, awaken desire!")
 				if(do_after(user, 50))
-					user.say("two")
+					user.say("Claim his body, bind his will!")
 					if(do_after(user, 50))
-						user.say("three")
+						user.say("Let him burn for thee alone!")
 						if(do_after(user, 50))
 							icon_state = "baotha_active" 
 							baothablessing(target)
@@ -1990,10 +1990,10 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(!target || QDELETED(target) || target.loc != loc)
 		to_chat(usr, "Selected target is not on the rune! [target.p_they(TRUE)] must be directly on top of the rune to receive Baotha's blessing.")
 		return
-	if(HAS_TRAIT(target, TRAIT_BAOTHATEST))
+	if(HAS_TRAIT(target, TRAIT_BAOTHA_SHAPED))
 		loc.visible_message(span_cult("They have already been blessed!"))
 		return
-	var/prompt = alert(target, "Goddess of corrupted affection is about to let you bear childer!",, "Let it happen...", "I reject!")
+	var/prompt = alert(target, "Goddess of corrupted affection is about to let you bear childer!",, "Let it happen...", "Resist!")
 	if(prompt == "Let it happen...")
 		to_chat(target, span_warning("A strange feeling of warmth appears inside your abdomen, growing hotter and hotter untill it almost feels like you are on fire, but pain actually never comes..."))
 		target.Stun(60)
@@ -2001,13 +2001,15 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 		target.sexcon.set_arousal(100)
 		loc.visible_message(span_cult("[target] moans and shivers ontop on the rune. Body of purple flames dances on their lower abdomen as a new marking appears there."))
 		spawn(20)
-		var/mutable_appearance/marking_overlay = mutable_appearance('icons/roguetown/misc/baotha_marking.dmi', "marking", FRONT_MUTATIONS_LAYER)
-		target.overlays_standing[FRONT_MUTATIONS_LAYER] = marking_overlay
-		playsound(target, 'sound/health/fastbeat.ogg', 60)
-		target.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE) // hue hue hue
-		spawn(40)
-		to_chat(target, span_purple("Enjoy new yourself!"))
-	if(prompt == "I reject!")
+			var/mutable_appearance/marking_overlay = mutable_appearance('icons/roguetown/misc/baotha_marking.dmi', "marking", BODY_LAYER)
+			target.overlays_standing[BODY_LAYER] = marking_overlay
+			target.apply_overlay(BODY_LAYER)
+			playsound(target, 'sound/health/fastbeat.ogg', 60)
+			target.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE) // hue hue hue
+			spawn(40)
+				to_chat(target, span_purple("Enjoy new yourself!"))
+				ADD_TRAIT(target, TRAIT_BAOTHA_SHAPED, TRAIT_GENERIC)
+	if(prompt == "Resist!")
 		to_chat(target, span_warning("I sincerely proposed you my greatest blessing, and you rejected me? How foolish!"))
 		target.Stun(60)
 		target.Knockdown(60)
