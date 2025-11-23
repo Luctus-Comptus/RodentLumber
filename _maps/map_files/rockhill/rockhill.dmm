@@ -18185,10 +18185,10 @@
 /area/rogue/under/town/basement/keep)
 "fEJ" = (
 /obj/structure/underworld/barrier,
-/obj/effect/landmark/start/courtagent,
 /obj/effect/landmark/start/adventurerlate{
 	dir = 1
 	},
+/obj/effect/landmark/start/courtagent,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/underworld{
 	first_time_text = "wayfarer's dream"
@@ -29521,6 +29521,10 @@
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor/rockhill)
+"jdv" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/west)
 "jdx" = (
 /turf/closed/wall/mineral/rogue/roofwall/innercorner{
 	dir = 4
@@ -47031,6 +47035,12 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors)
+"oKd" = (
+/obj/structure/fluff/walldeco/goblet{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/rtfield/rockhill)
 "oKp" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/blocks,
@@ -56177,13 +56187,10 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
 "rJp" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2;
-	pixel_y = 7
+/obj/structure/fluff/walldeco/bsmith{
+	dir = 1
 	},
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/rockhill)
 "rJy" = (
 /obj/structure/fluff/railing/border{
@@ -69987,8 +69994,7 @@
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/shop)
 "wgV" = (
-/obj/structure/fluff/walldeco/bsmith,
-/obj/machinery/light/rogue/lanternpost{
+/obj/structure/fluff/walldeco/bsmith{
 	dir = 1
 	},
 /turf/open/floor/rogue/dirt/road,
@@ -194073,7 +194079,7 @@ lxs
 lxs
 lxs
 lxs
-rfA
+jdv
 ujL
 rfA
 uRH
@@ -194892,7 +194898,7 @@ rfA
 rfA
 lNj
 rfA
-ujL
+rri
 rfA
 lxs
 lxs
@@ -195780,7 +195786,7 @@ smf
 oqo
 ujL
 lxs
-ujL
+rri
 smf
 smf
 smf
@@ -199216,7 +199222,7 @@ lxs
 lxs
 lxs
 gkx
-ujL
+rri
 rfA
 ikS
 smf
@@ -204388,7 +204394,7 @@ rfA
 rfA
 rfA
 rfA
-ujL
+rri
 rfA
 rfA
 rfA
@@ -213989,7 +213995,7 @@ qrc
 uWK
 qrc
 uWK
-uWK
+lFf
 wfu
 wfu
 wLx
@@ -220462,7 +220468,7 @@ wLx
 qrc
 qrc
 qrc
-qrc
+oyd
 wfu
 uWK
 qrc
@@ -241111,7 +241117,7 @@ azy
 fcx
 sYx
 goV
-fPd
+azy
 azy
 azy
 azy
@@ -241120,7 +241126,7 @@ azy
 azy
 sYx
 cuM
-sYx
+azy
 cuM
 cuM
 fPd
@@ -241539,13 +241545,13 @@ lOV
 lOV
 azy
 azy
-cuM
+azy
 sYx
 sYx
 azy
 azy
-fPd
-sYx
+azy
+azy
 sYx
 fcx
 ubD
@@ -241554,7 +241560,7 @@ fPd
 fPd
 cuM
 cuM
-fPd
+azy
 fPd
 cuM
 sYx
@@ -241947,7 +241953,7 @@ sYx
 fPd
 sYx
 cuM
-sYx
+azy
 azy
 azy
 azy
@@ -241986,7 +241992,7 @@ fPd
 fPd
 fGG
 azy
-sYx
+azy
 sYx
 sYx
 fPd
@@ -242382,7 +242388,7 @@ sYx
 sYx
 fPd
 fPd
-sYx
+azy
 azy
 azy
 azy
@@ -242822,11 +242828,11 @@ sYx
 fPd
 cuM
 fPd
-sYx
-fPd
-fPd
-cuM
-fPd
+azy
+azy
+azy
+azy
+azy
 fPd
 sYx
 cuM
@@ -243257,7 +243263,7 @@ sYx
 fPd
 fPd
 azy
-sYx
+azy
 fPd
 fPd
 cuM
@@ -243282,7 +243288,7 @@ sYx
 sYx
 sYx
 fPd
-sYx
+azy
 sYx
 sYx
 sYx
@@ -243689,7 +243695,7 @@ sYx
 fPd
 fGG
 azy
-sYx
+azy
 fPd
 fPd
 cuM
@@ -243714,7 +243720,7 @@ fPd
 fPd
 sYx
 sYx
-fPd
+azy
 azy
 azy
 fPd
@@ -244147,7 +244153,7 @@ fPd
 fPd
 fPd
 sYx
-cuM
+azy
 azy
 fPd
 sYx
@@ -244553,7 +244559,7 @@ fPd
 sYx
 fPd
 fPd
-fPd
+azy
 fPd
 fPd
 fPd
@@ -245848,7 +245854,7 @@ fPd
 fPd
 sYx
 fPd
-fPd
+azy
 azy
 cuM
 fPd
@@ -245878,7 +245884,7 @@ cuM
 cuM
 sYx
 azy
-sYx
+azy
 bdg
 sYx
 sYx
@@ -246712,7 +246718,7 @@ fPd
 fPd
 fPd
 sYx
-sYx
+azy
 azy
 sYx
 cuM
@@ -246744,7 +246750,7 @@ fPd
 fPd
 sYx
 fPd
-fPd
+azy
 azy
 fPd
 fPd
@@ -247176,7 +247182,7 @@ cuM
 fPd
 sYx
 sYx
-fcx
+etQ
 azy
 fPd
 sYx
@@ -249339,8 +249345,8 @@ cuM
 sYx
 sYx
 azy
-sYx
-sYx
+azy
+azy
 sYx
 fPd
 cuM
@@ -249773,7 +249779,7 @@ sYx
 fPd
 azy
 azy
-fPd
+azy
 fPd
 fPd
 fPd
@@ -250204,7 +250210,7 @@ cuM
 sYx
 fPd
 fGG
-fPd
+azy
 azy
 fcx
 fPd
@@ -250636,7 +250642,7 @@ cuM
 fPd
 sYx
 fPd
-fPd
+azy
 azy
 sYx
 sYx
@@ -251068,7 +251074,7 @@ cuM
 cuM
 fPd
 fPd
-fPd
+azy
 azy
 ubD
 cuM
@@ -251808,7 +251814,7 @@ fxx
 qvR
 qvR
 qvR
-sjP
+oKd
 sXm
 sXm
 cvU
@@ -252798,7 +252804,7 @@ whb
 fPd
 fPd
 azy
-fPd
+azy
 fPd
 fPd
 cuM
@@ -253230,7 +253236,7 @@ whb
 cuM
 fPd
 azy
-fPd
+azy
 sYx
 fPd
 fPd
@@ -253526,7 +253532,7 @@ iJW
 xrY
 uaL
 wSn
-qvR
+rBC
 mcJ
 idH
 qvR
@@ -253662,7 +253668,7 @@ whb
 fcx
 fPd
 azy
-fPd
+azy
 fGG
 fPd
 qrc
@@ -254094,7 +254100,7 @@ whb
 whb
 fPd
 azy
-fPd
+azy
 fPd
 fPd
 qrc
@@ -254391,7 +254397,7 @@ qvR
 qvR
 mwQ
 qqc
-rJp
+aNo
 qvR
 fxx
 fxx
@@ -254826,7 +254832,7 @@ qvR
 qvR
 sjP
 fxx
-qvR
+bHH
 fxx
 fxx
 sjP
@@ -255461,7 +255467,7 @@ wfu
 wfu
 uWK
 qrc
-uWK
+lFf
 wfu
 wfu
 wfu
@@ -256118,7 +256124,7 @@ fxx
 qvR
 qvR
 qvR
-qvR
+rJp
 qvR
 aai
 uaL
@@ -258470,7 +258476,7 @@ uWK
 uWK
 uWK
 uWK
-uWK
+lFf
 qrc
 wfu
 wfu
@@ -262589,7 +262595,7 @@ qvR
 qQZ
 xvN
 uaL
-spp
+qvR
 qvR
 qvR
 uaL
@@ -265621,7 +265627,7 @@ qvR
 spp
 uaL
 wSn
-spp
+qvR
 qvR
 qvR
 qvR
@@ -271692,7 +271698,7 @@ sjP
 wSn
 wSn
 qvR
-spp
+qvR
 wSn
 qvR
 qbG
@@ -278774,7 +278780,7 @@ wLx
 uWK
 uWK
 qrc
-uWK
+lFf
 wfu
 wfu
 wfu
@@ -522056,7 +522062,7 @@ uxY
 uxY
 uxY
 qLk
-wMe
+ckz
 ckz
 htt
 uxY
@@ -522488,8 +522494,8 @@ uxY
 tRv
 uxY
 uxY
-wMe
 fEJ
+ckz
 ckz
 uxY
 jcS
@@ -522920,8 +522926,8 @@ uxY
 rWJ
 uxY
 uxY
-wMe
 fEJ
+ckz
 gzW
 uxY
 jcS
@@ -523352,8 +523358,8 @@ uxY
 uxY
 uxY
 uxY
-wMe
 fEJ
+ckz
 ckz
 uxY
 jcS
